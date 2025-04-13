@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>4ca5e082-e6c5-412d-8263-6bf74b55adee</ProjectGuid>
+    <ProjectGuid>fcdeedbb-831b-4be7-ae53-772affd6d51a</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>NetworkProjects.py</StartupFile>
+    <StartupFile>UDP_pinger.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>NetworkProjects</Name>
-    <RootNamespace>NetworkProjects</RootNamespace>
+    <Name>UDP_pinger</Name>
+    <RootNamespace>UDP_pinger</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="NetworkProjects.py" />
+    <Compile Include="UDP_pinger.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

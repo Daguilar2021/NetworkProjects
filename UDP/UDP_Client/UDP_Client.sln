@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35527.113 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "NetworkProjects", "NetworkProjects\NetworkProjects.pyproj", "{4CA5E082-E6C5-412D-8263-6BF74B55ADEE}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "UDP_Client", "UDP_Client.pyproj", "{4A2B7146-6679-43F4-AA4F-B15E4F9E2952}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,8 +11,8 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{4CA5E082-E6C5-412D-8263-6BF74B55ADEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4CA5E082-E6C5-412D-8263-6BF74B55ADEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A2B7146-6679-43F4-AA4F-B15E4F9E2952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A2B7146-6679-43F4-AA4F-B15E4F9E2952}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
