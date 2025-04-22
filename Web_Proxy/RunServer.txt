@@ -6,3 +6,7 @@ test:
 http://example.com
 http://httpbin.org
 
+
+curl http://example.com
+curl http://httpbin.org/html
+

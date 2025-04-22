@@ -106,8 +106,13 @@ def handle_client(tcpCliSock, addr):
         tcpCliSock.close()
 
 # Main server loop that spawns threads
-while True:
-    print('Ready to serve...')
-    tcpCliSock, addr = tcpSerSock.accept()
-    client_thread = threading.Thread(target=handle_client, args=(tcpCliSock, addr))
-    client_thread.start()
+try:
+    while True:
+        print('Ready to serve...')
+        tcpCliSock, addr = tcpSerSock.accept()
+        client_thread = threading.Thread(target=handle_client, args=(tcpCliSock, addr))
+        client_thread.start()
+except KeyboardInterrupt:
+    print("\n shutting down server")
+    tcpSerSock.close()
+
