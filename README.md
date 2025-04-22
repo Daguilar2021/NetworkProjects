@@ -22,3 +22,9 @@ it does the following:
 
 ### 3. Mail client
 Basic python Mail client
+
+### 4. Multitrhead Web Proxy
+Python Web Proxy script for HTTP domains
+
+### 5. ICMP Ping
+Python Client side code that shows ICMP protocol pings.
