@@ -1,0 +1,34 @@
+#SMTPClientG.py
+# Mail client with Gmail
+
+
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+
+# Your Gmail credentials
+gmail_user = "alexander.mailman0@gmail.com"
+app_password = "password_goes_here"  # Paste the 16-char password here (no spaces)
+
+# Create the email message
+msg = MIMEMultipart()
+msg["From"] = gmail_user
+msg["To"] = "amurphy3@mail.stmarytx.edu"  # Replace with who you're sending to
+msg["Subject"] = "Test Email from Python SMTP Client"
+
+# Email body
+body = "This is a test email sent using Gmail SMTP via Python. :)"
+msg.attach(MIMEText(body, "plain"))
+
+try:
+    # Connect to Gmail's SMTP server
+    server = smtplib.SMTP("smtp.gmail.com", 587)
+    server.ehlo()
+    server.starttls()  # Upgrade to secure connection
+    server.login(gmail_user, app_password)
+    server.sendmail(gmail_user, msg["To"], msg.as_string())
+    server.quit()
+    print("Email sent successfully!")
+
+except Exception as e:
+    print("Failed to send email:", e)
