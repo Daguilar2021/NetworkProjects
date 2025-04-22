@@ -1,0 +1,16 @@
+ICMP Ping explanation:
+
+    dest = gethostbyname(host)
+
+The gethostbyname() function resolves a domain name to an IP address, which is required to send an ICMP Echo Request (ping).
+
+These are valid domain names:
+    "www.stmarytx.edu"
+    "8.8.8.8"
+    "baidu.com"
+
+
+These will not work (extra slashes or HTTP-style URLs):
+    "http://www.stmarytx.edu"  # Invalid for gethostbyname
+    "www.example.com/page"     # Not a resolvable domain name
+
